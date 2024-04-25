@@ -18,14 +18,16 @@ let edad
             semanasp = prompt("Digite sus semanas de pension realizadas: "); 
             totals = 1300-semanasp;
             año = totals * 0.0191781
-            alert("su edad es "+edad+" sus semanas restantes son: "+totals+" lo que equivale a "+año+" en años");
+            año = parseInt(año)
+            alert("su edad es "+edad+" sus semanas restantes son: "+totals+" lo que equivale a "+año+" años");
             estado = 1;
         }
         else if(sexo=='F'){;
             semanasp = prompt("Digite sus semanas de pension realizadas: "); 
             totals = 1000-semanasp;
             año = totals * 0.0191781
-            alert("su edad es "+edad+" sus semanas restantes son: "+totals+" lo que equivale a "+año+" en años");
+            año = parseInt(año)
+            alert("su edad es "+edad+" sus semanas restantes son: "+totals+" lo que equivale a "+año+" años");
             estado = 1;
         }
         else{
