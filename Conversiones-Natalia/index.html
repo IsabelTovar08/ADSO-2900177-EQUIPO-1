@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversiones</title>
+    <script src="js/conversiones.js"></script>
+</head>
+<body>
+    <script>
+        let diasTrabajados = prompt("digite los dias trabajados")
+        let valorDiaP = prompt("digite el valor de dia")
+
+
+        let sal = salario(diasTrabajados,valorDiaP);
+        console.log("Su salario inicial es de: "+sal);
+
+        let ahorross = ahorros(sal);
+        console.log("Sus ahorros son de: "+ahorross);
+        
+        let descuentoP = ahorross*0.2;
+        console.log("Dinero para un percance: "+descuentoP);
+
+        let ahorroTotal = ahorross - descuentoP;
+        console.log("Ahorros totales para viajar: "+ahorroTotal);
+
+        let viajes = viaje(ahorroTotal)
+        console.log(viajes);
+
+       
+
+        
+
+
+
+        
+       
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
