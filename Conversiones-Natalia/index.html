@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversiones</title>
+    <script src="js/conversiones.js"></script>
+</head>
+<body>
+    <script>
+        prompt("Señor usuario aqui podras calcular a que país puedes viajar con tus ahorros de 6 meses. ")
+        let diasTrabajados = prompt("digite los días trabajados para calcular tu sueldo inicial.")
+        let valorDiaP = prompt("digite el valor de día")
+        
+        let sal = salario(diasTrabajados,valorDiaP);
+        alert("Su salario inicial es de: "+sal)
+
+        let ahorross = ahorros(sal);
+        alert("Sus ahorros en 6 meses son de: "+ahorross);
+        
+        let descuentoP = ahorross*0.2;
+        alert("El 20% de sus ahorros que se utilizaran para un percance: "+descuentoP);
+
+        let ahorroTotal = ahorross - descuentoP;
+        alert("Ahorros totales para viajar: "+ahorroTotal);
+
+        let viajes = viaje(ahorroTotal)
+        alert(viajes);
+
+       
+
+        
+
+
+
+        
+       
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
